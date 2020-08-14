@@ -1,6 +1,9 @@
 #include <iostream>
 
+#include "note_helper.cpp"
 #include "keyboard.cpp"
+#include "record.cpp"
+#include "player.cpp"
 
 using namespace std;
 
@@ -19,5 +22,19 @@ int main()
     {
         initLoop();
     }
+    else if(choice == 2)
+    {
+        initRecord();
+    }
+    else if(choice == 3)
+    {
+        player();
+    }
     return 0;
 }
+
+/*
+add(659,1000);add(587,500);add(523,500);add(587,500);add(659,500);add(659,500);add(659,1000);add(0,500);add(587,500);add(587,500);
+add(587,1000);add(0,500);add(659,500);add(784,500);add(784,1000);add(0,500);add(659,1000);add(587,500);add(523,500);add(587,500);
+add(659,500);add(659,500);add(659,500);add(659,500);add(587,500);add(587,500);add(659,500);add(587,500);add(523,1000);
+*/
