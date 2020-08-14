@@ -5,29 +5,6 @@
 
 using namespace std;
 
-// permanent params
-float freq_A4;
-int offset;
-
-// runtime params
-float freq;
-int duration;
-
-// temporary params
-int octave, key_pressed, key_no;
-
-void gotoxy(short x, short y)
-{
-    COORD pos = {x, y};
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-}
-
-void getFreq()
-{
-    key_no = (offset + 3) + (octave - 1) * 12 + key_pressed;
-    freq = pow(2, (key_no - 49.0) / 12.0) * freq_A4;
-}
-
 void playLoop()
 {
     key_pressed = 0;
@@ -110,6 +87,9 @@ void playLoop()
         gotoxy(0,8);
         printf(" Offset: %d ", offset);
     }
+    else if(key == 'q' || key == 'Q')
+        exit(1);
+    
     if (key_pressed)
     {
         gotoxy(14, 3);
@@ -177,7 +157,7 @@ void initLoop()
     cout << "Press left and right arrow keys to control octave number OR directly press the octave number" << endl;
     cout << "Press up and down keys to control duration of the key" << endl;
     cout << "Press + or - to control the offset" << endl;
-    cout << "Press Q to exit to menu" << endl;
+    cout << "Press Q to exit" << endl;
 
     playLoop();
 }
