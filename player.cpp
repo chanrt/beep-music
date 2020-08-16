@@ -52,6 +52,66 @@ void initSong(int song)
         add(587, 500);
         add(523, 1000);
     }
+    else if (song == 2)
+    {
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(0, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(0, 500);
+        add(659, 500);
+        add(784, 500);
+        add(523, 500);
+        add(587, 500);
+        add(659, 500);
+        add(0, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(587, 500);
+        add(587, 500);
+        add(659, 500);
+        add(587, 500);
+        add(0, 500);
+        add(784, 500);
+        add(0, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(0, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(0, 500);
+        add(659, 500);
+        add(784, 500);
+        add(523, 500);
+        add(587, 500);
+        add(659, 500);
+        add(0, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(698, 500);
+        add(659, 500);
+        add(659, 500);
+        add(659, 500);
+        add(784, 500);
+        add(784, 500);
+        add(698, 500);
+        add(587, 500);
+        add(523, 500);
+    }
 }
 
 void playSong()
@@ -73,6 +133,7 @@ void player()
          << endl;
     cout << " Select which music to play:" << endl;
     cout << " 1. Mary had a little lamb" << endl;
+    cout << " 2. Jingle Bells" << endl;
 
     cout << endl
          << " Your choice: ";
