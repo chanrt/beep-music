@@ -7,6 +7,8 @@
 #include <ctime>
 #include <vector>
 
+using namespace std;
+
 // permanent params
 float freq_A4;
 int offset;

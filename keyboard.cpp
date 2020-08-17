@@ -135,8 +135,8 @@ void initLoop()
     freq_A4 = 440;
     offset = 0;
 
-    duration = 0;
-    octave = 4;
+    duration = -1;
+    octave = 5;
 
     system("cls");
 
